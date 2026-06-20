@@ -32,28 +32,18 @@ My goal is to grow into a software engineer with strong fundamentals, a product 
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api?username=YigitEfe-DEV&show_icons=true&hide_title=true&rank_icon=github&theme=transparent"
-    alt="GitHub Stats"
-    height="170"
-  />
-  <img
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=YigitEfe-DEV&layout=compact&theme=transparent"
     alt="Top Languages"
     height="170"
   />
 </p>
 
-<p align="center">
-  <img
-    src="https://streak-stats.demolab.com?user=YigitEfe-DEV&theme=transparent&hide_border=true"
-    alt="Streak Stats"
-  />
-</p>
-
 ## Featured Projects
 
-- [Smart-To-Do](https://github.com/RealYigit/my-first-app) - A modern task manager with editing, filters, search, statistics, and local persistence.
-- Future project space - New applications and experiments will be added here.
+- ⚡ **[TokenMaxxing](https://github.com/YigitEfe-DEV/TokenMaxxing)** - A high-performance repository intelligence and context optimization toolkit built in Rust to maximize LLM prompt efficiency.
+- 🛠️ **[DevToolKit](https://github.com/YigitEfe-DEV/DevToolKit)** - A compact developer dashboard utility providing fast access to formatting, validation, encoders, and other everyday developer tools.
+- 📝 **[Smart To-Do](https://github.com/YigitEfe-DEV/todo-react)** - A modern task management application featuring detailed filters, global search, inline editing, and state persistence.
+- 🐍 **[CalcSnake](https://github.com/YigitEfe-DEV/CalcSnake)** - A premium glassmorphism calculator experience combining scientific operations, memory registers, and a retro Snake game display.
 
 ## Connect
 
@@ -61,6 +51,6 @@ My goal is to grow into a software engineer with strong fundamentals, a product 
 
 ## Updates
 
-- Profile README refreshed for a cleaner student-developer presentation.
-- Branding, spacing, and section structure updated for a more professional layout.
-- Typing animation, stats cards, and featured project layout aligned to the new style.
+- Refreshed profile layout for a clean, project-focused developer portfolio.
+- Removed activity streaks to prioritize repository contributions and tech stack highlights.
+- Highlighted key repositories: **TokenMaxxing**, **DevToolKit**, **Smart To-Do**, and **CalcSnake**.
