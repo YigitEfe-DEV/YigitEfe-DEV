@@ -19,38 +19,10 @@ Most of my work is open source. I would rather ship a small tool that runs relia
 
 ## Technology Stack
 
-### Languages
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=typescript%2Cjs%2Cpython%2Crust%2Cbash&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=typescript%2Cjs%2Cpython%2Crust%2Cbash&theme=light" />
-  <img src="https://skillicons.dev/icons?i=typescript,js,python,rust,bash" alt="TypeScript, JavaScript, Python, Rust, Bash" />
-</picture>
-
-### Frontend
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cvite%2Chtml%2Ccss&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=react%2Cvite%2Chtml%2Ccss&theme=light" />
-  <img src="https://skillicons.dev/icons?i=react,vite,html,css" alt="React, Vite, HTML, CSS" />
-</picture>
-
-### Backend & Systems
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=nodejs&theme=light" />
-  <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
-</picture>
-
-`CLI Development` · `TUI Development` · `Systems Programming`
-
-### Tools
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Cvscode&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Cvscode&theme=light" />
-  <img src="https://skillicons.dev/icons?i=git,github,docker,vscode" alt="Git, GitHub, Docker, VS Code" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Cpython%2Crust%2Cbash%2Creact%2Cvite%2Chtml%2Ccss%2Cnodejs%2Cgit%2Cgithub%2Cdocker%2Cvscode&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Cpython%2Crust%2Cbash%2Creact%2Cvite%2Chtml%2Ccss%2Cnodejs%2Cgit%2Cgithub%2Cdocker%2Cvscode&theme=light" />
+  <img src="https://skillicons.dev/icons?i=ts,js,python,rust,bash,react,vite,html,css,nodejs,git,github,docker,vscode" alt="TypeScript, JavaScript, Python, Rust, Bash, React, Vite, HTML, CSS, Node.js, Git, GitHub, Docker, VS Code" />
 </picture>
 
 ## Projects
