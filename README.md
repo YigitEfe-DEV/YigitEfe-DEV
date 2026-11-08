@@ -1,74 +1,89 @@
 <h1 align="center">Yiğit Efe</h1>
-<h3 align="center">Student Developer · Building tools, CLIs and web experiences</h3>
-
-<p align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1200&color=1F8BFF&center=true&vCenter=true&width=760&lines=Student+Developer;Building+clean+and+practical+tools;Web%2C+CLI%2C+and+open+source;Always+learning+and+improving"
-    alt="Typing animation"
-  />
-</p>
+<p align="center">Building developer tools, CLI applications, and systems-oriented software.</p>
 
 <p align="center">
   <img
     src="assets/neural-network.svg"
-    alt="Animated artificial neural network: four blue input neurons feed two hidden layers of six neurons, whose signals propagate into two green output neurons"
+    alt="Animated neural network with four input neurons, two hidden layers, and two output neurons"
     width="760"
   />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Focus-Tools_%26_Open_Source-1F8BFF?style=for-the-badge" alt="Focus badge" />
-  <img src="https://img.shields.io/badge/Stack-TypeScript_%7C_Python_%7C_Rust_%7C_React-0F172A?style=for-the-badge" alt="Stack badge" />
-  <img src="https://img.shields.io/badge/Status-Actively_Building-334155?style=for-the-badge" alt="Status badge" />
-</p>
-
 ## About Me
 
-I am a student developer who builds clean, practical tools — from CLIs and TUI dashboards to small web apps and open-source libraries.
+I build practical developer tools, CLI applications, and software focused on solving real engineering problems.
 
-I care about fundamentals: clear architecture, thoughtful APIs, tests, and shipping things that actually work. My focus has expanded from frontend into systems-level work (network monitors, EVM tooling, Rust utilities) while keeping the same product-first mindset.
+My interests span systems programming, blockchain infrastructure, network monitoring, and modern web development. I care about clean architecture, maintainable code, thoughtful APIs, and shipping software that actually works.
+
+Most of my work is open source. I would rather ship a small tool that runs reliably than a large project that exists only as a demonstration.
 
 ## Technology Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,react,vite,python,rust,nodejs,bash,git,github,vscode,docker" alt="Technology stack" />
-</p>
+### Languages
 
-## GitHub Stats
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=typescript%2Cjs%2Cpython%2Crust%2Cbash&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=typescript%2Cjs%2Cpython%2Crust%2Cbash&theme=light" />
+  <img src="https://skillicons.dev/icons?i=typescript,js,python,rust,bash" alt="TypeScript, JavaScript, Python, Rust, Bash" />
+</picture>
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=YigitEfe-DEV&layout=compact&theme=transparent"
-    alt="Top Languages"
-    height="170"
-  />
-</p>
+### Frontend
 
-## Featured Projects
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react%2Cvite%2Chtml%2Ccss&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=react%2Cvite%2Chtml%2Ccss&theme=light" />
+  <img src="https://skillicons.dev/icons?i=react,vite,html,css" alt="React, Vite, HTML, CSS" />
+</picture>
 
-### Web3 & Network Tooling
+### Backend & Systems
 
-- ⛓️ **[chainpulse](https://github.com/YigitEfe-DEV/chainpulse)** — Multi-chain EVM gas tracker CLI. EIP-1559 fee history, percentile priority-fee sampling, public RPCs with fallback, and a programmatic TypeScript API.
-- ₿ **[btc-pulse](https://github.com/YigitEfe-DEV/btc-pulse)** — Real-time Bitcoin network monitor: mempool, fees, whale tracker and a Textual TUI. Async Python with automatic mempool.space → blockstream.info fallback.
-- 🌉 **[cross-chain-transaction-simulator](https://github.com/YigitEfe-DEV/cross-chain-transaction-simulator)** — Open-source simulator for visualizing and analyzing cross-chain EVM transaction flows.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=nodejs&theme=light" />
+  <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
+</picture>
 
-### Developer Tools & Libraries
+`CLI Development` · `TUI Development` · `Systems Programming`
 
-- ⚡ **[TokenMaxxing](https://github.com/YigitEfe-DEV/TokenMaxxing)** — Repository intelligence and context optimization toolkit in Rust: duplicate detection, context compression and prompt optimization.
-- 🛠️ **[DevToolKit](https://github.com/YigitEfe-DEV/DevToolKit)** — All-in-one developer toolbox: JSON utilities, generators, converters and validators built with React + Vite.
+### Tools
 
-### Web Apps
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Cvscode&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git%2Cgithub%2Cdocker%2Cvscode&theme=light" />
+  <img src="https://skillicons.dev/icons?i=git,github,docker,vscode" alt="Git, GitHub, Docker, VS Code" />
+</picture>
 
-- 📝 **[Smart To-Do](https://github.com/YigitEfe-DEV/todo-react)** — Task management app with detailed filters, global search, inline editing and persistent state.
-- 🐍 **[CalcSnake](https://github.com/YigitEfe-DEV/CalcSnake)** — Glassmorphism calculator with scientific operations, memory registers and a hidden Snake game.
+## Projects
+
+- [**chainpulse**](https://github.com/YigitEfe-DEV/chainpulse) — Multi-chain EVM gas price tracker CLI with EIP-1559 fee history and percentile priority-fee sampling; works without API keys.
+- [**TokenMaxxing**](https://github.com/YigitEfe-DEV/TokenMaxxing) — Repository intelligence and context optimization toolkit in Rust: duplicate detection, context compression, and prompt optimization.
+- [**btc-pulse**](https://github.com/YigitEfe-DEV/btc-pulse) — Real-time Bitcoin network monitor as a dependency-light CLI and TUI: mempool pulse, fee oracle, whale tracker, and network health.
+- [**chainguard**](https://github.com/YigitEfe-DEV/chainguard) — ChainGuard, an open-source EVM transaction security and risk analysis SDK for wallets, dApps, and custody.
+- [**cross-chain-transaction-simulator**](https://github.com/YigitEfe-DEV/cross-chain-transaction-simulator) — Deterministic, offline-first simulator for visualizing and analyzing cross-chain EVM transaction flows across bridge models.
+- [**website-bug-hunter**](https://github.com/YigitEfe-DEV/website-bug-hunter) — Open-source website bug and quality scanner: broken links and images, console errors, redirect anomalies, metadata, and accessibility.
+- [**dontneed-dns**](https://github.com/YigitEfe-DEV/dontneed-dns) — Auditable DNS-over-HTTPS resolver and TLS-splitting proxy for networks where DNS queries or the TLS handshake are blocked.
+- [**DevToolKit**](https://github.com/YigitEfe-DEV/DevToolKit) — All-in-one developer toolbox built with React and Vite: JSON utilities, generators, converters, and validators.
+- [**smart-to-do**](https://github.com/YigitEfe-DEV/smart-to-do) — LumaFlow, a React task workspace with local persistence, filtering, global search, and a statistics dashboard.
+- [**CalcSnake**](https://github.com/YigitEfe-DEV/CalcSnake) — Scientific calculator with memory registers, persistent history, and a hidden Snake game.
+- [**YigitEfe-DEV.github.io**](https://github.com/YigitEfe-DEV/YigitEfe-DEV.github.io) — Published build of my personal site, efeyigit.me, served through GitHub Pages.
+- [**YigitEfe-DEV**](https://github.com/YigitEfe-DEV/YigitEfe-DEV) — This profile repository: README, neural network animation, and the generator that produces it.
+- [**merkle-tree-visualizer**](https://github.com/YigitEfe-DEV/merkle-tree-visualizer) — Fork of berkturan-coder/merkle-tree-visualizer: builds Merkle trees and generates and verifies proofs.
+- [**skills**](https://github.com/YigitEfe-DEV/skills) — Fork of mattpocock/skills: a collection of agent skills for engineering workflows.
+- [**StickPick**](https://github.com/YigitEfe-DEV/StickPick) — Fork of AvishkarPatil/StickPick: converts Telegram stickers for WhatsApp.
+- [**awesome-n8n**](https://github.com/YigitEfe-DEV/awesome-n8n) — Fork of tysoncung/awesome-n8n: community nodes, templates, and hosting guides for n8n automation.
 
 ## Connect
 
-- GitHub: [YigitEfe-DEV](https://github.com/YigitEfe-DEV)
-
-## Updates
-
-- Added an animated neural-network hero visual (CSS-animated SVG, with a GIF fallback) to the profile.
-- Refreshed profile to reflect current work across CLIs, network tooling and open source — not just frontend.
-- Expanded the tech stack (TypeScript, Python, Rust, Node, Docker) and grouped featured projects by category.
-- Added new repositories: **chainpulse**, **btc-pulse**, and **cross-chain-transaction-simulator**.
+<p align="left">
+  <a href="https://www.linkedin.com/in/efe-yigit-kaya-250392271/">
+    <img src="assets/icons/linkedin.svg" width="36" height="36" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:yigitefek4ya@gmail.com">
+    <img src="assets/icons/email.svg" width="36" height="36" alt="Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://efeyigit.me">
+    <img src="assets/icons/website.svg" width="36" height="36" alt="Website" />
+  </a>
+</p>
