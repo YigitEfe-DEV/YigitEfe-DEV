@@ -9,6 +9,14 @@
 </p>
 
 <p align="center">
+  <img
+    src="assets/neural-network.svg"
+    alt="Animated artificial neural network: four blue input neurons feed two hidden layers of six neurons, whose signals propagate into two green output neurons"
+    width="760"
+  />
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Focus-Tools_%26_Open_Source-1F8BFF?style=for-the-badge" alt="Focus badge" />
   <img src="https://img.shields.io/badge/Stack-TypeScript_%7C_Python_%7C_Rust_%7C_React-0F172A?style=for-the-badge" alt="Stack badge" />
   <img src="https://img.shields.io/badge/Status-Actively_Building-334155?style=for-the-badge" alt="Status badge" />
@@ -60,6 +68,7 @@ I care about fundamentals: clear architecture, thoughtful APIs, tests, and shipp
 
 ## Updates
 
+- Added an animated neural-network hero visual (CSS-animated SVG, with a GIF fallback) to the profile.
 - Refreshed profile to reflect current work across CLIs, network tooling and open source — not just frontend.
 - Expanded the tech stack (TypeScript, Python, Rust, Node, Docker) and grouped featured projects by category.
 - Added new repositories: **chainpulse**, **btc-pulse**, and **cross-chain-transaction-simulator**.

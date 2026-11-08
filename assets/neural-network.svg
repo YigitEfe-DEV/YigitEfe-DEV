@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 460" width="840" height="460" role="img" aria-labelledby="nn-title nn-desc" shape-rendering="geometricPrecision">
+<title id="nn-title">Animated artificial neural network</title><desc id="nn-desc">A fully connected feed-forward network with four input neurons, two hidden layers of six neurons each and two output neurons. Luminous signals travel left to right from the blue input layer, through both hidden layers, and into the green output layer, repeating in a continuous loop.</desc>
+<defs><radialGradient id="nn-halo-0" cx="0.5" cy="0.5" r="0.5"><stop offset="0%" stop-color="#58A6FF" stop-opacity="0.85"/><stop offset="45%" stop-color="#58A6FF" stop-opacity="0.30"/><stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/></radialGradient><radialGradient id="nn-halo-1" cx="0.5" cy="0.5" r="0.5"><stop offset="0%" stop-color="#58A6FF" stop-opacity="0.85"/><stop offset="45%" stop-color="#58A6FF" stop-opacity="0.30"/><stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/></radialGradient><radialGradient id="nn-halo-2" cx="0.5" cy="0.5" r="0.5"><stop offset="0%" stop-color="#58A6FF" stop-opacity="0.85"/><stop offset="45%" stop-color="#58A6FF" stop-opacity="0.30"/><stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/></radialGradient><radialGradient id="nn-halo-3" cx="0.5" cy="0.5" r="0.5"><stop offset="0%" stop-color="#3FB950" stop-opacity="0.85"/><stop offset="45%" stop-color="#3FB950" stop-opacity="0.30"/><stop offset="100%" stop-color="#3FB950" stop-opacity="0"/></radialGradient><radialGradient id="nn-bg" cx="0.5" cy="0.47" r="0.62"><stop offset="0%" stop-color="#161B22" stop-opacity="0.75"/><stop offset="60%" stop-color="#161B22" stop-opacity="0.25"/><stop offset="100%" stop-color="#161B22" stop-opacity="0"/></radialGradient><style>.wire {
+    fill: none;
+    stroke: #586575;
+    stroke-width: 1;
+    stroke-opacity: 0.55;
+  }
+
+  .sig, .sig-glow, .sig-glow-inner {
+    fill: none;
+    stroke-linecap: round;
+    opacity: 0;
+    animation-duration: 4.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: var(--d);
+  }
+  .sig { stroke-width: 2.0; stroke-dasharray: 5 100; animation-name: nn-signal; }
+  .sig-glow {
+    stroke-width: 6.5;
+    stroke-dasharray: 13 100;
+    animation-name: nn-signal-glow;
+  }
+  .sig-glow-inner {
+    stroke-width: 3.4;
+    stroke-dasharray: 13 100;
+    animation-name: nn-signal-glow-inner;
+  }
+
+  .set-0 .sig, .set-0 .sig-glow, .set-0 .sig-glow-inner { stroke: #58A6FF; }
+  .set-1 .sig, .set-1 .sig-glow, .set-1 .sig-glow-inner { stroke: #58A6FF; }
+  .set-2 .sig, .set-2 .sig-glow, .set-2 .sig-glow-inner { stroke: #3FB950; }
+
+  .node-act, .node-halo {
+    opacity: 0;
+    animation-duration: 4.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: var(--d);
+  }
+  .node-act { animation-name: nn-node; }
+  .node-halo {
+    animation-name: nn-halo;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .node-base { fill: #303D50; }
+  .node-ring { fill: none; stroke-width: 2; stroke-opacity: 0.9; }
+
+  @keyframes nn-signal {
+    0%     { stroke-dashoffset: 0;    opacity: 0; }
+    1.667%  { stroke-dashoffset: 0;    opacity: 1.0; }
+    18.333% { stroke-dashoffset: -100; opacity: 1.0; }
+    20.000% { stroke-dashoffset: -100; opacity: 0; }
+    100%   { stroke-dashoffset: 0;    opacity: 0; }
+  }
+  @keyframes nn-signal-glow {
+    0%     { stroke-dashoffset: 13;   opacity: 0; }
+    1.667%  { stroke-dashoffset: 13;   opacity: 0.09; }
+    18.333% { stroke-dashoffset: -87;  opacity: 0.09; }
+    20.000% { stroke-dashoffset: -87;  opacity: 0; }
+    100%   { stroke-dashoffset: 13;   opacity: 0; }
+  }
+  @keyframes nn-signal-glow-inner {
+    0%     { stroke-dashoffset: 13;   opacity: 0; }
+    1.667%  { stroke-dashoffset: 13;   opacity: 0.2; }
+    18.333% { stroke-dashoffset: -87;  opacity: 0.2; }
+    20.000% { stroke-dashoffset: -87;  opacity: 0; }
+    100%   { stroke-dashoffset: 13;   opacity: 0; }
+  }
+  @keyframes nn-node {
+    0%    { opacity: 0; }
+    1.083%  { opacity: 1; }
+    12.500%  { opacity: 0; }
+    100%  { opacity: 0; }
+  }
+  @keyframes nn-halo {
+    0%    { opacity: 0;    transform: scale(0.62); }
+    1.083%  { opacity: 0.62; transform: scale(1); }
+    12.500%  { opacity: 0;    transform: scale(1.18); }
+    100%  { opacity: 0;    transform: scale(1.18); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sig, .sig-glow, .sig-glow-inner, .node-act, .node-halo { animation: none; opacity: 0; }
+  }</style></defs>
+<rect width="840" height="460" rx="18" fill="#0D1117"/><rect width="840" height="460" rx="18" fill="url(#nn-bg)"/>
+<g id="connections">
+<g class="edge set-0" style="--d:-4.760s"><path class="wire" d="M78 113 L312 75" pathLength="100"/><path class="sig-glow" d="M78 113 L312 75" pathLength="100"/><path class="sig-glow-inner" d="M78 113 L312 75" pathLength="100"/><path class="sig" d="M78 113 L312 75" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.712s"><path class="wire" d="M78 113 L312 137" pathLength="100"/><path class="sig-glow" d="M78 113 L312 137" pathLength="100"/><path class="sig-glow-inner" d="M78 113 L312 137" pathLength="100"/><path class="sig" d="M78 113 L312 137" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.695s"><path class="wire" d="M78 113 L312 199" pathLength="100"/><path class="sig-glow" d="M78 113 L312 199" pathLength="100"/><path class="sig-glow-inner" d="M78 113 L312 199" pathLength="100"/><path class="sig" d="M78 113 L312 199" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.645s"><path class="wire" d="M78 113 L312 261" pathLength="100"/><path class="sig-glow" d="M78 113 L312 261" pathLength="100"/><path class="sig-glow-inner" d="M78 113 L312 261" pathLength="100"/><path class="sig" d="M78 113 L312 261" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.612s"><path class="wire" d="M78 113 L312 323" pathLength="100"/><path class="sig-glow" d="M78 113 L312 323" pathLength="100"/><path class="sig-glow-inner" d="M78 113 L312 323" pathLength="100"/><path class="sig" d="M78 113 L312 323" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.572s"><path class="wire" d="M78 113 L312 385" pathLength="100"/><path class="sig-glow" d="M78 113 L312 385" pathLength="100"/><path class="sig-glow-inner" d="M78 113 L312 385" pathLength="100"/><path class="sig" d="M78 113 L312 385" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.670s"><path class="wire" d="M78 191 L312 75" pathLength="100"/><path class="sig-glow" d="M78 191 L312 75" pathLength="100"/><path class="sig-glow-inner" d="M78 191 L312 75" pathLength="100"/><path class="sig" d="M78 191 L312 75" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.643s"><path class="wire" d="M78 191 L312 137" pathLength="100"/><path class="sig-glow" d="M78 191 L312 137" pathLength="100"/><path class="sig-glow-inner" d="M78 191 L312 137" pathLength="100"/><path class="sig" d="M78 191 L312 137" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.602s"><path class="wire" d="M78 191 L312 199" pathLength="100"/><path class="sig-glow" d="M78 191 L312 199" pathLength="100"/><path class="sig-glow-inner" d="M78 191 L312 199" pathLength="100"/><path class="sig" d="M78 191 L312 199" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.559s"><path class="wire" d="M78 191 L312 261" pathLength="100"/><path class="sig-glow" d="M78 191 L312 261" pathLength="100"/><path class="sig-glow-inner" d="M78 191 L312 261" pathLength="100"/><path class="sig" d="M78 191 L312 261" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.510s"><path class="wire" d="M78 191 L312 323" pathLength="100"/><path class="sig-glow" d="M78 191 L312 323" pathLength="100"/><path class="sig-glow-inner" d="M78 191 L312 323" pathLength="100"/><path class="sig" d="M78 191 L312 323" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.476s"><path class="wire" d="M78 191 L312 385" pathLength="100"/><path class="sig-glow" d="M78 191 L312 385" pathLength="100"/><path class="sig-glow-inner" d="M78 191 L312 385" pathLength="100"/><path class="sig" d="M78 191 L312 385" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.594s"><path class="wire" d="M78 269 L312 75" pathLength="100"/><path class="sig-glow" d="M78 269 L312 75" pathLength="100"/><path class="sig-glow-inner" d="M78 269 L312 75" pathLength="100"/><path class="sig" d="M78 269 L312 75" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.536s"><path class="wire" d="M78 269 L312 137" pathLength="100"/><path class="sig-glow" d="M78 269 L312 137" pathLength="100"/><path class="sig-glow-inner" d="M78 269 L312 137" pathLength="100"/><path class="sig" d="M78 269 L312 137" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.503s"><path class="wire" d="M78 269 L312 199" pathLength="100"/><path class="sig-glow" d="M78 269 L312 199" pathLength="100"/><path class="sig-glow-inner" d="M78 269 L312 199" pathLength="100"/><path class="sig" d="M78 269 L312 199" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.474s"><path class="wire" d="M78 269 L312 261" pathLength="100"/><path class="sig-glow" d="M78 269 L312 261" pathLength="100"/><path class="sig-glow-inner" d="M78 269 L312 261" pathLength="100"/><path class="sig" d="M78 269 L312 261" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.424s"><path class="wire" d="M78 269 L312 323" pathLength="100"/><path class="sig-glow" d="M78 269 L312 323" pathLength="100"/><path class="sig-glow-inner" d="M78 269 L312 323" pathLength="100"/><path class="sig" d="M78 269 L312 323" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.399s"><path class="wire" d="M78 269 L312 385" pathLength="100"/><path class="sig-glow" d="M78 269 L312 385" pathLength="100"/><path class="sig-glow-inner" d="M78 269 L312 385" pathLength="100"/><path class="sig" d="M78 269 L312 385" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.495s"><path class="wire" d="M78 347 L312 75" pathLength="100"/><path class="sig-glow" d="M78 347 L312 75" pathLength="100"/><path class="sig-glow-inner" d="M78 347 L312 75" pathLength="100"/><path class="sig" d="M78 347 L312 75" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.466s"><path class="wire" d="M78 347 L312 137" pathLength="100"/><path class="sig-glow" d="M78 347 L312 137" pathLength="100"/><path class="sig-glow-inner" d="M78 347 L312 137" pathLength="100"/><path class="sig" d="M78 347 L312 137" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.417s"><path class="wire" d="M78 347 L312 199" pathLength="100"/><path class="sig-glow" d="M78 347 L312 199" pathLength="100"/><path class="sig-glow-inner" d="M78 347 L312 199" pathLength="100"/><path class="sig" d="M78 347 L312 199" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.384s"><path class="wire" d="M78 347 L312 261" pathLength="100"/><path class="sig-glow" d="M78 347 L312 261" pathLength="100"/><path class="sig-glow-inner" d="M78 347 L312 261" pathLength="100"/><path class="sig" d="M78 347 L312 261" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.344s"><path class="wire" d="M78 347 L312 323" pathLength="100"/><path class="sig-glow" d="M78 347 L312 323" pathLength="100"/><path class="sig-glow-inner" d="M78 347 L312 323" pathLength="100"/><path class="sig" d="M78 347 L312 323" pathLength="100"/></g>
+<g class="edge set-0" style="--d:-4.312s"><path class="wire" d="M78 347 L312 385" pathLength="100"/><path class="sig-glow" d="M78 347 L312 385" pathLength="100"/><path class="sig-glow-inner" d="M78 347 L312 385" pathLength="100"/><path class="sig" d="M78 347 L312 385" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.610s"><path class="wire" d="M312 75 L546 75" pathLength="100"/><path class="sig-glow" d="M312 75 L546 75" pathLength="100"/><path class="sig-glow-inner" d="M312 75 L546 75" pathLength="100"/><path class="sig" d="M312 75 L546 75" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.576s"><path class="wire" d="M312 75 L546 137" pathLength="100"/><path class="sig-glow" d="M312 75 L546 137" pathLength="100"/><path class="sig-glow-inner" d="M312 75 L546 137" pathLength="100"/><path class="sig" d="M312 75 L546 137" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.535s"><path class="wire" d="M312 75 L546 199" pathLength="100"/><path class="sig-glow" d="M312 75 L546 199" pathLength="100"/><path class="sig-glow-inner" d="M312 75 L546 199" pathLength="100"/><path class="sig" d="M312 75 L546 199" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.509s"><path class="wire" d="M312 75 L546 261" pathLength="100"/><path class="sig-glow" d="M312 75 L546 261" pathLength="100"/><path class="sig-glow-inner" d="M312 75 L546 261" pathLength="100"/><path class="sig" d="M312 75 L546 261" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.467s"><path class="wire" d="M312 75 L546 323" pathLength="100"/><path class="sig-glow" d="M312 75 L546 323" pathLength="100"/><path class="sig-glow-inner" d="M312 75 L546 323" pathLength="100"/><path class="sig" d="M312 75 L546 323" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.423s"><path class="wire" d="M312 75 L546 385" pathLength="100"/><path class="sig-glow" d="M312 75 L546 385" pathLength="100"/><path class="sig-glow-inner" d="M312 75 L546 385" pathLength="100"/><path class="sig" d="M312 75 L546 385" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.546s"><path class="wire" d="M312 137 L546 75" pathLength="100"/><path class="sig-glow" d="M312 137 L546 75" pathLength="100"/><path class="sig-glow-inner" d="M312 137 L546 75" pathLength="100"/><path class="sig" d="M312 137 L546 75" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.514s"><path class="wire" d="M312 137 L546 137" pathLength="100"/><path class="sig-glow" d="M312 137 L546 137" pathLength="100"/><path class="sig-glow-inner" d="M312 137 L546 137" pathLength="100"/><path class="sig" d="M312 137 L546 137" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.488s"><path class="wire" d="M312 137 L546 199" pathLength="100"/><path class="sig-glow" d="M312 137 L546 199" pathLength="100"/><path class="sig-glow-inner" d="M312 137 L546 199" pathLength="100"/><path class="sig" d="M312 137 L546 199" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.446s"><path class="wire" d="M312 137 L546 261" pathLength="100"/><path class="sig-glow" d="M312 137 L546 261" pathLength="100"/><path class="sig-glow-inner" d="M312 137 L546 261" pathLength="100"/><path class="sig" d="M312 137 L546 261" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.414s"><path class="wire" d="M312 137 L546 323" pathLength="100"/><path class="sig-glow" d="M312 137 L546 323" pathLength="100"/><path class="sig-glow-inner" d="M312 137 L546 323" pathLength="100"/><path class="sig" d="M312 137 L546 323" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.367s"><path class="wire" d="M312 137 L546 385" pathLength="100"/><path class="sig-glow" d="M312 137 L546 385" pathLength="100"/><path class="sig-glow-inner" d="M312 137 L546 385" pathLength="100"/><path class="sig" d="M312 137 L546 385" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.494s"><path class="wire" d="M312 199 L546 75" pathLength="100"/><path class="sig-glow" d="M312 199 L546 75" pathLength="100"/><path class="sig-glow-inner" d="M312 199 L546 75" pathLength="100"/><path class="sig" d="M312 199 L546 75" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.457s"><path class="wire" d="M312 199 L546 137" pathLength="100"/><path class="sig-glow" d="M312 199 L546 137" pathLength="100"/><path class="sig-glow-inner" d="M312 199 L546 137" pathLength="100"/><path class="sig" d="M312 199 L546 137" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.431s"><path class="wire" d="M312 199 L546 199" pathLength="100"/><path class="sig-glow" d="M312 199 L546 199" pathLength="100"/><path class="sig-glow-inner" d="M312 199 L546 199" pathLength="100"/><path class="sig" d="M312 199 L546 199" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.386s"><path class="wire" d="M312 199 L546 261" pathLength="100"/><path class="sig-glow" d="M312 199 L546 261" pathLength="100"/><path class="sig-glow-inner" d="M312 199 L546 261" pathLength="100"/><path class="sig" d="M312 199 L546 261" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.352s"><path class="wire" d="M312 199 L546 323" pathLength="100"/><path class="sig-glow" d="M312 199 L546 323" pathLength="100"/><path class="sig-glow-inner" d="M312 199 L546 323" pathLength="100"/><path class="sig" d="M312 199 L546 323" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.306s"><path class="wire" d="M312 199 L546 385" pathLength="100"/><path class="sig-glow" d="M312 199 L546 385" pathLength="100"/><path class="sig-glow-inner" d="M312 199 L546 385" pathLength="100"/><path class="sig" d="M312 199 L546 385" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.455s"><path class="wire" d="M312 261 L546 75" pathLength="100"/><path class="sig-glow" d="M312 261 L546 75" pathLength="100"/><path class="sig-glow-inner" d="M312 261 L546 75" pathLength="100"/><path class="sig" d="M312 261 L546 75" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.423s"><path class="wire" d="M312 261 L546 137" pathLength="100"/><path class="sig-glow" d="M312 261 L546 137" pathLength="100"/><path class="sig-glow-inner" d="M312 261 L546 137" pathLength="100"/><path class="sig" d="M312 261 L546 137" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.373s"><path class="wire" d="M312 261 L546 199" pathLength="100"/><path class="sig-glow" d="M312 261 L546 199" pathLength="100"/><path class="sig-glow-inner" d="M312 261 L546 199" pathLength="100"/><path class="sig" d="M312 261 L546 199" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.333s"><path class="wire" d="M312 261 L546 261" pathLength="100"/><path class="sig-glow" d="M312 261 L546 261" pathLength="100"/><path class="sig-glow-inner" d="M312 261 L546 261" pathLength="100"/><path class="sig" d="M312 261 L546 261" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.308s"><path class="wire" d="M312 261 L546 323" pathLength="100"/><path class="sig-glow" d="M312 261 L546 323" pathLength="100"/><path class="sig-glow-inner" d="M312 261 L546 323" pathLength="100"/><path class="sig" d="M312 261 L546 323" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.264s"><path class="wire" d="M312 261 L546 385" pathLength="100"/><path class="sig-glow" d="M312 261 L546 385" pathLength="100"/><path class="sig-glow-inner" d="M312 261 L546 385" pathLength="100"/><path class="sig" d="M312 261 L546 385" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.410s"><path class="wire" d="M312 323 L546 75" pathLength="100"/><path class="sig-glow" d="M312 323 L546 75" pathLength="100"/><path class="sig-glow-inner" d="M312 323 L546 75" pathLength="100"/><path class="sig" d="M312 323 L546 75" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.373s"><path class="wire" d="M312 323 L546 137" pathLength="100"/><path class="sig-glow" d="M312 323 L546 137" pathLength="100"/><path class="sig-glow-inner" d="M312 323 L546 137" pathLength="100"/><path class="sig" d="M312 323 L546 137" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.330s"><path class="wire" d="M312 323 L546 199" pathLength="100"/><path class="sig-glow" d="M312 323 L546 199" pathLength="100"/><path class="sig-glow-inner" d="M312 323 L546 199" pathLength="100"/><path class="sig" d="M312 323 L546 199" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.297s"><path class="wire" d="M312 323 L546 261" pathLength="100"/><path class="sig-glow" d="M312 323 L546 261" pathLength="100"/><path class="sig-glow-inner" d="M312 323 L546 261" pathLength="100"/><path class="sig" d="M312 323 L546 261" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.242s"><path class="wire" d="M312 323 L546 323" pathLength="100"/><path class="sig-glow" d="M312 323 L546 323" pathLength="100"/><path class="sig-glow-inner" d="M312 323 L546 323" pathLength="100"/><path class="sig" d="M312 323 L546 323" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.211s"><path class="wire" d="M312 323 L546 385" pathLength="100"/><path class="sig-glow" d="M312 323 L546 385" pathLength="100"/><path class="sig-glow-inner" d="M312 323 L546 385" pathLength="100"/><path class="sig" d="M312 323 L546 385" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.351s"><path class="wire" d="M312 385 L546 75" pathLength="100"/><path class="sig-glow" d="M312 385 L546 75" pathLength="100"/><path class="sig-glow-inner" d="M312 385 L546 75" pathLength="100"/><path class="sig" d="M312 385 L546 75" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.302s"><path class="wire" d="M312 385 L546 137" pathLength="100"/><path class="sig-glow" d="M312 385 L546 137" pathLength="100"/><path class="sig-glow-inner" d="M312 385 L546 137" pathLength="100"/><path class="sig" d="M312 385 L546 137" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.274s"><path class="wire" d="M312 385 L546 199" pathLength="100"/><path class="sig-glow" d="M312 385 L546 199" pathLength="100"/><path class="sig-glow-inner" d="M312 385 L546 199" pathLength="100"/><path class="sig" d="M312 385 L546 199" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.242s"><path class="wire" d="M312 385 L546 261" pathLength="100"/><path class="sig-glow" d="M312 385 L546 261" pathLength="100"/><path class="sig-glow-inner" d="M312 385 L546 261" pathLength="100"/><path class="sig" d="M312 385 L546 261" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.203s"><path class="wire" d="M312 385 L546 323" pathLength="100"/><path class="sig-glow" d="M312 385 L546 323" pathLength="100"/><path class="sig-glow-inner" d="M312 385 L546 323" pathLength="100"/><path class="sig" d="M312 385 L546 323" pathLength="100"/></g>
+<g class="edge set-1" style="--d:-3.168s"><path class="wire" d="M312 385 L546 385" pathLength="100"/><path class="sig-glow" d="M312 385 L546 385" pathLength="100"/><path class="sig-glow-inner" d="M312 385 L546 385" pathLength="100"/><path class="sig" d="M312 385 L546 385" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.460s"><path class="wire" d="M546 75 L776 180" pathLength="100"/><path class="sig-glow" d="M546 75 L776 180" pathLength="100"/><path class="sig-glow-inner" d="M546 75 L776 180" pathLength="100"/><path class="sig" d="M546 75 L776 180" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.281s"><path class="wire" d="M546 75 L776 280" pathLength="100"/><path class="sig-glow" d="M546 75 L776 280" pathLength="100"/><path class="sig-glow-inner" d="M546 75 L776 280" pathLength="100"/><path class="sig" d="M546 75 L776 280" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.400s"><path class="wire" d="M546 137 L776 180" pathLength="100"/><path class="sig-glow" d="M546 137 L776 180" pathLength="100"/><path class="sig-glow-inner" d="M546 137 L776 180" pathLength="100"/><path class="sig" d="M546 137 L776 180" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.231s"><path class="wire" d="M546 137 L776 280" pathLength="100"/><path class="sig-glow" d="M546 137 L776 280" pathLength="100"/><path class="sig-glow-inner" d="M546 137 L776 280" pathLength="100"/><path class="sig" d="M546 137 L776 280" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.366s"><path class="wire" d="M546 199 L776 180" pathLength="100"/><path class="sig-glow" d="M546 199 L776 180" pathLength="100"/><path class="sig-glow-inner" d="M546 199 L776 180" pathLength="100"/><path class="sig" d="M546 199 L776 180" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.177s"><path class="wire" d="M546 199 L776 280" pathLength="100"/><path class="sig-glow" d="M546 199 L776 280" pathLength="100"/><path class="sig-glow-inner" d="M546 199 L776 280" pathLength="100"/><path class="sig" d="M546 199 L776 280" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.301s"><path class="wire" d="M546 261 L776 180" pathLength="100"/><path class="sig-glow" d="M546 261 L776 180" pathLength="100"/><path class="sig-glow-inner" d="M546 261 L776 180" pathLength="100"/><path class="sig" d="M546 261 L776 180" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.121s"><path class="wire" d="M546 261 L776 280" pathLength="100"/><path class="sig-glow" d="M546 261 L776 280" pathLength="100"/><path class="sig-glow-inner" d="M546 261 L776 280" pathLength="100"/><path class="sig" d="M546 261 L776 280" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.254s"><path class="wire" d="M546 323 L776 180" pathLength="100"/><path class="sig-glow" d="M546 323 L776 180" pathLength="100"/><path class="sig-glow-inner" d="M546 323 L776 180" pathLength="100"/><path class="sig" d="M546 323 L776 180" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.066s"><path class="wire" d="M546 323 L776 280" pathLength="100"/><path class="sig-glow" d="M546 323 L776 280" pathLength="100"/><path class="sig-glow-inner" d="M546 323 L776 280" pathLength="100"/><path class="sig" d="M546 323 L776 280" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.202s"><path class="wire" d="M546 385 L776 180" pathLength="100"/><path class="sig-glow" d="M546 385 L776 180" pathLength="100"/><path class="sig-glow-inner" d="M546 385 L776 180" pathLength="100"/><path class="sig" d="M546 385 L776 180" pathLength="100"/></g>
+<g class="edge set-2" style="--d:-2.010s"><path class="wire" d="M546 385 L776 280" pathLength="100"/><path class="sig-glow" d="M546 385 L776 280" pathLength="100"/><path class="sig-glow-inner" d="M546 385 L776 280" pathLength="100"/><path class="sig" d="M546 385 L776 280" pathLength="100"/></g>
+</g>
+<g id="neurons">
+<g class="neuron"><circle class="node-halo" cx="78" cy="113" r="36.4" fill="url(#nn-halo-0)" style="--d:-5.060s"/><circle class="node-base" cx="78" cy="113" r="13"/><circle class="node-act" cx="78" cy="113" r="13" fill="#1F6FEB" style="--d:-5.060s"/><circle class="node-ring" cx="78" cy="113" r="13" stroke="#1F6FEB"/></g>
+<g class="neuron"><circle class="node-halo" cx="78" cy="191" r="36.4" fill="url(#nn-halo-0)" style="--d:-5.060s"/><circle class="node-base" cx="78" cy="191" r="13"/><circle class="node-act" cx="78" cy="191" r="13" fill="#1F6FEB" style="--d:-5.060s"/><circle class="node-ring" cx="78" cy="191" r="13" stroke="#1F6FEB"/></g>
+<g class="neuron"><circle class="node-halo" cx="78" cy="269" r="36.4" fill="url(#nn-halo-0)" style="--d:-5.060s"/><circle class="node-base" cx="78" cy="269" r="13"/><circle class="node-act" cx="78" cy="269" r="13" fill="#1F6FEB" style="--d:-5.060s"/><circle class="node-ring" cx="78" cy="269" r="13" stroke="#1F6FEB"/></g>
+<g class="neuron"><circle class="node-halo" cx="78" cy="347" r="36.4" fill="url(#nn-halo-0)" style="--d:-5.060s"/><circle class="node-base" cx="78" cy="347" r="13"/><circle class="node-act" cx="78" cy="347" r="13" fill="#1F6FEB" style="--d:-5.060s"/><circle class="node-ring" cx="78" cy="347" r="13" stroke="#1F6FEB"/></g>
+<g class="neuron"><circle class="node-halo" cx="312" cy="75" r="36.4" fill="url(#nn-halo-1)" style="--d:-3.910s"/><circle class="node-base" cx="312" cy="75" r="13"/><circle class="node-act" cx="312" cy="75" r="13" fill="#388BFD" style="--d:-3.910s"/><circle class="node-ring" cx="312" cy="75" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="312" cy="137" r="36.4" fill="url(#nn-halo-1)" style="--d:-3.910s"/><circle class="node-base" cx="312" cy="137" r="13"/><circle class="node-act" cx="312" cy="137" r="13" fill="#388BFD" style="--d:-3.910s"/><circle class="node-ring" cx="312" cy="137" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="312" cy="199" r="36.4" fill="url(#nn-halo-1)" style="--d:-3.910s"/><circle class="node-base" cx="312" cy="199" r="13"/><circle class="node-act" cx="312" cy="199" r="13" fill="#388BFD" style="--d:-3.910s"/><circle class="node-ring" cx="312" cy="199" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="312" cy="261" r="36.4" fill="url(#nn-halo-1)" style="--d:-3.910s"/><circle class="node-base" cx="312" cy="261" r="13"/><circle class="node-act" cx="312" cy="261" r="13" fill="#388BFD" style="--d:-3.910s"/><circle class="node-ring" cx="312" cy="261" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="312" cy="323" r="36.4" fill="url(#nn-halo-1)" style="--d:-3.910s"/><circle class="node-base" cx="312" cy="323" r="13"/><circle class="node-act" cx="312" cy="323" r="13" fill="#388BFD" style="--d:-3.910s"/><circle class="node-ring" cx="312" cy="323" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="312" cy="385" r="36.4" fill="url(#nn-halo-1)" style="--d:-3.910s"/><circle class="node-base" cx="312" cy="385" r="13"/><circle class="node-act" cx="312" cy="385" r="13" fill="#388BFD" style="--d:-3.910s"/><circle class="node-ring" cx="312" cy="385" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="546" cy="75" r="36.4" fill="url(#nn-halo-2)" style="--d:-2.760s"/><circle class="node-base" cx="546" cy="75" r="13"/><circle class="node-act" cx="546" cy="75" r="13" fill="#388BFD" style="--d:-2.760s"/><circle class="node-ring" cx="546" cy="75" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="546" cy="137" r="36.4" fill="url(#nn-halo-2)" style="--d:-2.760s"/><circle class="node-base" cx="546" cy="137" r="13"/><circle class="node-act" cx="546" cy="137" r="13" fill="#388BFD" style="--d:-2.760s"/><circle class="node-ring" cx="546" cy="137" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="546" cy="199" r="36.4" fill="url(#nn-halo-2)" style="--d:-2.760s"/><circle class="node-base" cx="546" cy="199" r="13"/><circle class="node-act" cx="546" cy="199" r="13" fill="#388BFD" style="--d:-2.760s"/><circle class="node-ring" cx="546" cy="199" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="546" cy="261" r="36.4" fill="url(#nn-halo-2)" style="--d:-2.760s"/><circle class="node-base" cx="546" cy="261" r="13"/><circle class="node-act" cx="546" cy="261" r="13" fill="#388BFD" style="--d:-2.760s"/><circle class="node-ring" cx="546" cy="261" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="546" cy="323" r="36.4" fill="url(#nn-halo-2)" style="--d:-2.760s"/><circle class="node-base" cx="546" cy="323" r="13"/><circle class="node-act" cx="546" cy="323" r="13" fill="#388BFD" style="--d:-2.760s"/><circle class="node-ring" cx="546" cy="323" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="546" cy="385" r="36.4" fill="url(#nn-halo-2)" style="--d:-2.760s"/><circle class="node-base" cx="546" cy="385" r="13"/><circle class="node-act" cx="546" cy="385" r="13" fill="#388BFD" style="--d:-2.760s"/><circle class="node-ring" cx="546" cy="385" r="13" stroke="#388BFD"/></g>
+<g class="neuron"><circle class="node-halo" cx="776" cy="180" r="42" fill="url(#nn-halo-3)" style="--d:-1.610s"/><circle class="node-base" cx="776" cy="180" r="15"/><circle class="node-act" cx="776" cy="180" r="15" fill="#238636" style="--d:-1.610s"/><circle class="node-ring" cx="776" cy="180" r="15" stroke="#238636"/></g>
+<g class="neuron"><circle class="node-halo" cx="776" cy="280" r="42" fill="url(#nn-halo-3)" style="--d:-1.610s"/><circle class="node-base" cx="776" cy="280" r="15"/><circle class="node-act" cx="776" cy="280" r="15" fill="#238636" style="--d:-1.610s"/><circle class="node-ring" cx="776" cy="280" r="15" stroke="#238636"/></g>
+</g>
+</svg>
