@@ -34,6 +34,7 @@ Most of my work is open source. I would rather ship a small tool that runs relia
 - [**cross-chain-transaction-simulator**](https://github.com/YigitEfe-DEV/cross-chain-transaction-simulator) — Deterministic, offline-first simulator for visualizing and analyzing cross-chain EVM transaction flows across bridge models.
 - [**website-bug-hunter**](https://github.com/YigitEfe-DEV/website-bug-hunter) — Open-source website bug and quality scanner: broken links and images, console errors, redirect anomalies, metadata, and accessibility.
 - [**dontneed-dns**](https://github.com/YigitEfe-DEV/dontneed-dns) — Auditable DNS-over-HTTPS resolver and TLS-splitting proxy for networks where DNS queries or the TLS handshake are blocked.
+- [**matlab-lab**](https://github.com/YigitEfe-DEV/matlab-lab) — Local-first MATLAB learning site: summary notes from course slides, 100 auto-graded exercises, and real code execution with error diagnostics; dependency-free via Python stdlib and GNU Octave.
 - [**DevToolKit**](https://github.com/YigitEfe-DEV/DevToolKit) — All-in-one developer toolbox built with React and Vite: JSON utilities, generators, converters, and validators.
 - [**smart-to-do**](https://github.com/YigitEfe-DEV/smart-to-do) — LumaFlow, a React task workspace with local persistence, filtering, global search, and a statistics dashboard.
 - [**CalcSnake**](https://github.com/YigitEfe-DEV/CalcSnake) — Scientific calculator with memory registers, persistent history, and a hidden Snake game.
